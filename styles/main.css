@@ -124,6 +124,39 @@ p.section__subtitle{
   margin: 0 auto;
 }
 
+.card.rating .card__title, .card.awards .card__title {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 32px;
+} 
+
+.card.rating .card__subtitle {
+  display: flex;
+  align-items: center;
+}
+
+.card.awards .card__subtitle {
+  display: flex;
+  align-items: center;
+}
+
+.card__avatars {
+  display: inline-flex;
+  margin-right: 16px;
+}
+
+.card__avatars img {
+  border: solid 1px var(--color-white);
+  border-radius: 50%;
+  width: 24px;
+  aspect-ratio: 1/1;
+  box-shadow: -5px 4px 14px rgba(151, 151, 151, 0.28)
+}
+
+.card__avatars img:not(:first-child) {
+  margin-left: -6px;
+}
+
 .prime {
   background: linear-gradient(311.76deg, #D4E7FE -15.24%, #FFFFFF 78.85%);
 
@@ -265,6 +298,7 @@ p.section__subtitle{
   grid-template-columns: 340px 340px 1fr;
   gap: 24px ;
   align-items: center;
+  margin-bottom: 96px;
 }
 
 .achievement .card {
@@ -319,30 +353,139 @@ p.section__subtitle{
   margin-bottom: 32px;
 }
 
-.card.rating .card__title, .card.awards .card__title {
-  display: flex;
-  gap: 10px;
-  margin-bottom: 32px;
-} 
+.community {
+  background: linear-gradient(0deg, rgba(241, 246, 253, 0) 1.63%, #F1F6FD 20.5%, #F1F6FD 58.57%, #FFFFFF 100%);
+  padding: 80px 0;
+  margin-bottom: 120px;
+}
 
-.card.rating .card__subtitle {
+.community__items {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+  gap: 40px;
+}
+
+.community__content {
+  text-align: center;
+  width: 448px;
+  margin: 0 auto;
+  margin-bottom: 64px;
+}
+
+.community__card {
+  padding: 40px 64px 40px 40px;
+  background-color: var(--color-white);
+  box-shadow: 14px 22px 52px --12px;
+  border-radius: 16px;
   display: flex;
   align-items: center;
+  gap: 24px;
 }
 
-.card__avatars {
-  display: inline-flex;
-  margin-right: 16px;
+.community__card-content {
+
 }
 
-.card__avatars img {
-  border: solid 1px var(--color-white);
-  border-radius: 50%;
-  width: 24px;
+.community__card-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 66px;
   aspect-ratio: 1/1;
-  box-shadow: -5px 4px 14px rgba(151, 151, 151, 0.28)
+  border-radius: 24px;
 }
 
-.card__avatars img:not(:first-child) {
-  margin-left: -6px;
+.community__members .community__card-icon, .community__custom .community__card-icon {
+  background: linear-gradient(154.49deg, #5CA1FE 6.61%, #217BF4 89.72%);
+  box-shadow: 0px 10px 22px -2px rgba(109, 171, 255, 0.36);
 }
+
+.community__groups .community__card-icon, .community__builder .community__card-icon {
+  background: linear-gradient(154.49deg, #FF858A 6.61%, #F04148 89.72%);
+  box-shadow: 0px 8px 22px -2px rgba(248, 87, 94, 0.3);
+}
+
+.community__forum .community__card-icon, .community__scroll .community__card-icon {
+  background: linear-gradient(154.49deg, #FFD085 6.61%, #FFAF2E 89.72%);
+  box-shadow: 0px 10px 22px -2px rgba(250, 186, 84, 0.3);
+}
+
+.team__content {
+  width: 450px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.team__tabs {
+  background-color: var(--color-primary-10);
+  width: 450px;
+  margin: 40px auto;
+  display: flex;
+  border-radius: 16px;
+  padding: 8px;
+}
+
+.team__tab {
+  height: 56px;
+  display: inline-flex;
+  padding: 0 32px;
+  align-items: center;
+  border: 0;
+  border-radius: 8px;
+  background-color: transparent;
+  flex-grow: 1;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.team__tab:hover {
+  color: var(--color-primary);
+}
+
+.team__tab-active {
+  background-color: var(--color-primary);
+  color: var(--color-white);
+}
+
+.team__members {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 32px;
+}
+
+.team__member-card {
+  text-align: center;
+  border: solid 1px #F3F3F380;
+  border-radius: 16px;
+  transition: box-shadow 200ms ease-in-out, transform 200ms ease-in-out;
+  padding: 16px;
+}
+
+.team__member-card:hover{
+  box-shadow: 0px 26px 49px rgba(146, 165, 184, 0.24);
+  transform: translate(-8px, -8px);
+}
+
+.team__member-picture {
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.team__member-avatar {
+  display: inline-block;
+  position: relative;
+}
+
+.team__member-name {
+  font-size: 24px;
+}
+
+.team__member-username {
+}
+
+
+
