@@ -76,9 +76,9 @@ h6 {
 }
 
 :root {
-  --color-primary: #217BF4;
-  --color-primary-10: rgba(33, 123, 244, 10%);
-  --color-secondary: #FFAF2E;
+  --color-primary: #3A435E;
+  --color-primary-10: rgba(202, 221, 255, 10%);
+  --color-secondary: #CADDFF;
   --color-white: #FFFF;
   --color-heading: #0A093D;
   --color-text: #656464;
@@ -189,14 +189,10 @@ p.section__subtitle {
 
 .card__avatars img {
   border: solid 1px var(--color-white);
-  border-radius: 50%;
   width: 24px;
   aspect-ratio: 1/1;
   box-shadow: -5px 4px 14px rgba(151, 151, 151, 0.28)
-}
-
-.card__avatars img:not(:first-child) {
-  margin-left: -6px;
+  background-color: transparent;
 }
 
 a.link__arrowed {
@@ -206,11 +202,11 @@ a.link__arrowed {
 }
 
 a.link__arrowed:hover {
-  color: var(--color-primary);
+  color: #5271FF;
 }
 
 a.link__arrowed:hover svg path {
-  stroke: var(--color-primary);
+  stroke: #5271FF;
 }
 
 .prime {
@@ -258,6 +254,33 @@ a.link__arrowed:hover svg path {
 .header__search input {
   all: unset;
   width: 120px;
+}
+
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+.slides {
+  display: none;
+}
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 3s;
+  animation-name: fade;
+  animation-duration: 3s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
 }
 
 .hero {
@@ -448,20 +471,20 @@ a.link__arrowed:hover svg path {
 
 .community__members .community__card-icon,
 .community__custom .community__card-icon {
-  background: linear-gradient(154.49deg, #5CA1FE 6.61%, #217BF4 89.72%);
+  background: linear-gradient(154.49deg, #89a1e8 6.61%, #3A435E 89.72%);
   box-shadow: 0px 10px 22px -2px rgba(109, 171, 255, 0.36);
 }
 
 .community__groups .community__card-icon,
 .community__builder .community__card-icon {
-  background: linear-gradient(154.49deg, #FF858A 6.61%, #F04148 89.72%);
-  box-shadow: 0px 8px 22px -2px rgba(248, 87, 94, 0.3);
+  background: linear-gradient(154.49deg, #CADDFF 6.61%, #91adde 89.72%);
+  box-shadow: 0px 8px 22px -2px rgba(59, 71, 85, 0.3);
 }
 
 .community__forum .community__card-icon,
 .community__scroll .community__card-icon {
-  background: linear-gradient(154.49deg, #FFD085 6.61%, #FFAF2E 89.72%);
-  box-shadow: 0px 10px 22px -2px rgba(250, 186, 84, 0.3);
+  background: linear-gradient(154.49deg, #a9afd1 6.61%, #6C6F7F 89.72%);
+  box-shadow: 0px 10px 22px -2px rgb(41, 22, 53, 0.3);
 }
 
 .team {
@@ -497,7 +520,7 @@ a.link__arrowed:hover svg path {
 }
 
 .team__tab:hover {
-  color: var(--color-primary);
+  color:#5271FF;
 }
 
 .team__tab-active {
@@ -507,7 +530,7 @@ a.link__arrowed:hover svg path {
 
 .team__members {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   gap: 32px;
 }
 
@@ -525,7 +548,7 @@ a.link__arrowed:hover svg path {
 }
 
 .team__member-picture {
-  background-color: #E2EEFF;
+  background-color:#CADDFF;
   border-radius: 50%;
   position: absolute;
   top: 50%;
@@ -548,6 +571,10 @@ a.link__arrowed:hover svg path {
 
 .team__member-name {
   font-size: 24px;
+}
+
+.team__member-username {
+  font-size: 13px;
 }
 
 .app {

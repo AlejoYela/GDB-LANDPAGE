@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Alejandro Yela Portfolio</title>
+  <title>Gestor de Documentación Biomédica</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
@@ -14,19 +14,17 @@
 </head>
 
 <body>
-  <div class="prime">
+  <div id="section-inicio" class="prime">
     <header class="header">
       <div class="container header__container">
-        <img src="./images/logo.svg"
-          alt="Company logo named Netbook, circle split diagonal with orange and yellow sections, and a line with dot"
-          width="145" height="35" />
-
+        <img src="./images/logo.svg" alt="" width="145" height="35" />
         <nav aria-label="Primary" class="header__nav">
           <ul>
-            <li><a href="#" class="active">Home</a></li>
-            <li><a href="">Community</a></li>
+            <li><a href="#section-inicio" class="active">Inicio</a></li>
+            <li><a href="#section-caracteristicas">Caracteristicas</a></li>
+            <li><a href="#section-comunidad">Comunidad</a></li>
             <li><a href="">Blog</a></li>
-            <li><a href="">Events</a></li>
+            <li><a href="#section-contacto">Contacto</a></li>
           </ul>
         </nav>
 
@@ -41,19 +39,35 @@
     </header>
     <section class="hero container">
       <div class="hero__content">
-        <h3 class="hero__title">Netbook Community</h3>
-        <h3 class="hero__subtitle">Your Solutions For Community!</h3>
-        <p class="hero__description">More than 2 billion people in over countries use socibook to stay in touch with
-          friends & family.</p>
+        <h3 class="hero__title">Gestor de Equipos Biomédicos</h3>
+        <h3 class="hero__subtitle">Una solución liviana y definitiva.</h3>
+        <p class="hero__description">Mantiene, genera y modifica fácilmente la documentación relacionada a equipos
+          biomédicos en tu institución.</p>
         <p class="hero__cta">
-          <a href="#" class="btn btn--large">About More</a>
-          <a href="#" class="btn btn__secondary btn--large">Invite Friend</a>
+          <a href="#" class="btn btn--large">Saber más</a>
+          <a href="mailto:?subject=Mirá esta página web&body=Mira esta página web: https://www.gdb.com.co"
+            class="btn btn__secondary btn--large">Compartir</a>
+
+
         </p>
       </div>
 
-      <div class="hero__image">
-        <img src="./images/hero-image.svg"
-          alt="Ilustration of three person talking with bubble messages loading between them">
+      <div class="slideshow-container">
+        <div class="slides fade">
+          <img src="./images/9.svg" alt="">
+        </div>
+        <div class="slides fade">
+          <img src="./images/10.svg" alt="">
+        </div>
+        <div class="slides fade">
+          <img src="./images/11.svg" alt="">
+        </div>
+        <div class="slides fade">
+          <img src="./images/12.svg" alt="">
+        </div>
+        <div class="slides fade">
+          <img src="./images/13.svg" alt="">
+        </div>
       </div>
     </section>
   </div>
@@ -61,13 +75,17 @@
     <div class="clients"></div>
     <section class="whats-netbooks container">
       <div class="whats-netbooks__content">
-        <h3 class="section__title">Whats netbooks?</h3>
-        <h3 class="section__subtitle">Why Join to Netbook Social Network?</h3>
-        <p>More than 2 billion people in over countries use socibook to stay in touch with friends & family.</p>
+        <h3 class="section__title">¿Y que es?</h3>
+        <p>Es un sistema integrado de gestión de documentación de equipos biomédicos, multitarea y desarrollado
+          completamente en Excel Macros VBA.
+        </p>
+        <h3 class="section__subtitle">¿Porque utilizarlo?</h3>
+        <p>Posee un sistema liviano, intuitivo y sin necesidad de instalar programas externos.</p>
         <ul>
-          <li>Groups</li>
-          <li>Messages</li>
-          <li>Share</li>
+          <li>1 Mb de tamaño.</li>
+          <li>Sin instalación externa.</li>
+          <li>Soporte de sistema personalizado.</li>
+          <li>Interfaz sencilla e intuitiva.</li>
         </ul>
       </div>
       <div class="whats-netbooks__images">
@@ -76,24 +94,24 @@
         <img src="./images/whats-netbook-002.jpg" class="whats-netbooks__images-002" alt="">
       </div>
     </section>
-    <section class="achievement container">
+    <section id="section-objetivos" class="achievement container">
       <article class="card rating">
         <header>
-          <h3 class="card__title"><img src="./images/ico-star.svg" alt="Outline star icon"> 4.8 Raiting</h3>
+          <h3 class="card__title"><img src="./images/ico-star.svg" alt="Outline star icon"> Alcance</h3>
           <p class="card__subtitle">
             <span class="card__avatars">
-              <img src="./images/avatar-001.jpg" alt="">
-              <img src="./images/avatar-002.jpg" alt="">
-              <img src="./images/avatar-003.jpg" alt="">
+              <img src="./images/ico-botiquin.svg" alt="">
             </span>
-            <b>+836k</b>&nbsp;Members
+            Hospitales de&nbsp;<b>1 y 2 Nivel</b>
           </p>
         </header>
 
-        <p class="card__content">More than 2 billion we people over countries use socibooks we to stay in touch with
-          friends.</p>
+        <p class="card__content">Alcance limitado a hospitales pequeños a medianos, que no necesitan software licenciado
+          y buscan una alternativa liviana y barata.</p>
 
-        <p><a class="link__arrowed" href="#">Join Our Community
+        <p><a
+            href="https://www.minsalud.gov.co/Normatividad%20CRES/Acuerdo%2008%20de%202009%20-%20Anexo%203%20-%20Comentarios%20complejidad%20y%20promocion%20de%20la%20salud%20y%20prevencion%20enfermedad.pdf"
+            class="link__arrowed">Conoce el nivel de tu hospital
             <svg width="10" height="8" viewBox="0 0 10 8" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M1.5625 4H8.4375" stroke="#4A4A56" stroke-width="1.2" stroke-linecap="round"
                 stroke-linejoin="round" />
@@ -104,21 +122,22 @@
       </article>
       <article class="card awards">
         <header>
-          <h3 class="card__title"><img src="./images/ico-trophy.svg" alt="Outline trophy icon"> Awwwards</h3>
+          <h3 class="card__title"><img src="./images/ico-trophy.svg" alt="Outline trophy icon"> Tecnología</h3>
           <p class="card__subtitle">
             <span class="card__avatars">
-              <img src="./images/ico-github.png" alt="">
+              <img src="./images/ico-github.svg" alt="">
             </span>
-            Best of&nbsp;<b>2021</b>&nbsp;on Github
+            Excel avanzado&nbsp;<b>Macros VBA</b>
           </p>
         </header>
 
-        <p class="card__content">More than 2 billion we people over countries use socibooks we to stay in touch with
-          friends.
+        <p class="card__content">Completamente desarrollado en el Pluggin de Visual Basic de Microsoft Office Excel para
+          macros y formularios, sin instalar software externo.
         </p>
 
-        <p><a class="link__arrowed" href="#">Go To Awards <svg width="10" height="8" viewBox="0 0 10 8" fill="none"
-              xmlns="http://www.w3.org/2000/svg">
+        <p><a class="link__arrowed"
+            href="https://support.microsoft.com/es-es/office/trabajar-con-macros-de-vba-en-excel-para-la-web-98784ad0-898c-43aa-a1da-4f0fb5014343">Conoce
+            más de Macros <svg width="10" height="8" viewBox="0 0 10 8" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M1.5625 4H8.4375" stroke="#4A4A56" stroke-width="1.2" stroke-linecap="round"
                 stroke-linejoin="round" />
               <path d="M5.625 1.1875L8.4375 4L5.625 6.8125" stroke="#4A4A56" stroke-width="1.2" stroke-linecap="round"
@@ -127,12 +146,12 @@
           </a></p>
       </article>
       <div class="achievement__content">
-        <h3 class="section__title">Our Achievement</h3>
-        <p class="section__subtitle">We are Connecting You The Digital Life.</p>
-        <p>The scope the Social Media becomes crucial Is helps the business to directly engage with their needs and
-          wants.</p>
+        <h3 class="section__title">Nuestro Objetivo.</h3>
+        <p class="section__subtitle">Facilitar la auotmatización</p>
+        <p>A hospitales pequeños y medianos que no cuentan con los recursos para obtener software licenciado y quieren
+          optimizar sus procesos.</p>
 
-        <a href="" class="btn btn--large">Discover me
+        <a href="" class="btn btn--large">Descubre más
           <svg width="10" height="8" viewBox="0 0 10 8" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M1.5625 4H8.4375" stroke="#ffff" stroke-width="1.2" stroke-linecap="round"
               stroke-linejoin="round" />
@@ -143,12 +162,13 @@
 
       </div>
     </section>
-    <section class="community">
+    <section id="section-caracteristicas" class="community">
       <div class="container">
         <div class="community__content">
-          <h3 class="section__title">Our Community</h3>
-          <p class="section__subtitle">Community Main Feature</p>
-          <p>The wise man therefore always holds in these matters to this principle of selection.</p>
+          <h3 class="section__title">Sistema</h3>
+          <p class="section__subtitle">Caracteristicas principales de GDB</p>
+          <p>Cada versión entregada al cliente es personalizada con logos y necesidades propias, pero en
+            todos los casos el sistema contiene:</p>
         </div>
         <div class="community__items">
           <div class="community__card community__members">
@@ -156,73 +176,74 @@
               <img src="./images/ico-community-members.svg" alt="" width="34px" height="">
             </div>
             <div class="community__card-content">
-              <h3>Members, Friends</h3>
-              <p>Members, Friends Connection (like followers), Private Message</p>
+              <h3>Inventarios</h3>
+              <p>General, de mantenimiento y de calibración, modificables y escalables</p>
             </div>
           </div>
           <div class="community__card community__groups">
             <div class="community__card-icon">
-              <img src="./images/ico-community-members.svg" alt="" width="34px" height="">
+              <img src="./images/ico-community-members-2.svg" alt="" width="34px" height="">
             </div>
             <div class="community__card-content">
-              <h3>Groups</h3>
-              <p>Your users can create groups to let other users to join and talk</p>
+              <h3>Hojas de vida</h3>
+              <p>Se generan automáticamente y en masa con solo presionar un botón.</p>
             </div>
           </div>
           <div class="community__card community__forum">
             <div class="community__card-icon">
-              <img src="./images/ico-community-members.svg" alt="" width="34px" height="">
+              <img src="./images/ico-community-members-3.svg" alt="" width="34px" height="">
             </div>
             <div class="community__card-content">
-              <h3>Forum</h3>
-              <p>Forum is ready by BBPress. Your users can make topics and talk.</p>
+              <h3>Mantenimiento.</h3>
+              <p>Genera reportes de instalación, mantenimiento preventivo y correctivo en masa y rápido.</p>
             </div>
           </div>
           <div class="community__card community__custom">
             <div class="community__card-icon">
-              <img src="./images/ico-community-members.svg" alt="" width="34px" height="">
+              <img src="./images/ico-community-members-4.svg" alt="" width="34px" height="">
             </div>
             <div class="community__card-content">
-              <h3>Custom Module</h3>
-              <p>You can create Members, Groups Module. We already created 3 modules. It's by drag & drop live builder.
+              <h3>Búsqueda.</h3>
+              <p>Puedes buscar, clasificar y filtrar rápidamente la información de tus equipos.
               </p>
             </div>
           </div>
           <div class="community__card community__builder">
             <div class="community__card-icon">
-              <img src="./images/ico-community-members.svg" alt="" width="34px" height="">
+              <img src="./images/ico-community-members-5.svg" alt="" width="34px" height="">
             </div>
             <div class="community__card-content">
-              <h3>List Builder</h3>
-              <p>Members, Groups list can be modified by drag & drop live builder.</p>
+              <h3>Etiquetado</h3>
+              <p>Asigna a cada equipo códigos únicos de inventario, adquisición o baja para
+                mantener la información organizada y actualizada.</p>
             </div>
           </div>
           <div class="community__card community__scroll">
             <div class="community__card-icon">
-              <img src="./images/ico-community-members.svg" alt="" width="34px" height="">
+              <img src="./images/ico-community-members-6.svg" alt="" width="34px" height="">
             </div>
             <div class="community__card-content">
-              <h3>List Scroll Effects</h3>
-              <p>8 different scroll effects are ready. You can always change by your tastes.</p>
+              <h3>Soporte.</h3>
+              <p>Personalizado, rápido y brindado por ingenieros biomédicos especializados en software.</p>
             </div>
           </div>
 
         </div>
       </div>
     </section>
-    <section class="team">
+    <section id="section-comunidad" class="team">
       <div class="container">
         <div class="team__content">
-          <h3 class="section__title">Valuable Team</h3>
-          <p class="section__subtitle">Our Active Members</p>
-          <p>when an unknown printer took a galley of type and meeting fari scrambled it.</p>
+          <h3 class="section__title">Comunidad</h3>
+          <p class="section__subtitle">Nuestro Equipo.</p>
+          <p>Desarrolladores e ingenieros dedicados a crear, mantener y actualizar GDB, y Desarrolladores actuales.</p>
         </div>
 
 
         <div class="team__tabs">
-          <button class="team__tab">Newest</button>
-          <button class="team__tab">Popular</button>
-          <button class="team__tab team__tab-active">Active</button>
+          <button class="team__tab">Clientes</button>
+          <button class="team__tab">Donadores</button>
+          <button class="team__tab team__tab-active">Desarrolladores</button>
         </div>
 
         <div class="team__members">
@@ -230,37 +251,28 @@
             <div class="team__member-avatar">
               <img src="./images/avatar-blue-check.svg" class="team__member-bluecheck" alt="">
               <img src="./images/team-fotoframe.svg" class="team__member-frame" alt="">
-              <img src="./images/team-001.png" class="team__member-picture" alt="">
+              <img src="./images/img-aayb.svg" class="team__member-picture" alt="">
             </div>
-            <p class="team__member-name">Fahim Rahman</p>
-            <p class="team__member-username">@rahman</p>
+            <p class="team__member-name">Alejandro Yela</p>
+            <p class="team__member-username">Ingeniero Biomédico, desarrollador.</p>
           </div>
           <div class="team__member-card">
             <div class="team__member-avatar">
               <img src="./images/avatar-blue-check.svg" class="team__member-bluecheck" alt="">
               <img src="./images/team-fotoframe.svg" class="team__member-frame" alt="">
-              <img src="./images/team-001.png" class="team__member-picture" alt="">
+              <img src="./images/img-rjgp.svg" class="team__member-picture" alt="">
             </div>
-            <p class="team__member-name">Fahim Rahman</p>
-            <p class="team__member-username">@rahman</p>
+            <p class="team__member-name">Rubi Guevara</p>
+            <p class="team__member-username">Ingeniera Informática, desarrolladora.</p>
           </div>
           <div class="team__member-card">
             <div class="team__member-avatar">
               <img src="./images/avatar-blue-check.svg" class="team__member-bluecheck" alt="">
               <img src="./images/team-fotoframe.svg" class="team__member-frame" alt="">
-              <img src="./images/team-001.png" class="team__member-picture" alt="">
+              <img src="./images/img-iaoa.svg" class="team__member-picture" alt="">
             </div>
-            <p class="team__member-name">Fahim Rahman</p>
-            <p class="team__member-username">@rahman</p>
-          </div>
-          <div class="team__member-card">
-            <div class="team__member-avatar">
-              <img src="./images/avatar-blue-check.svg" class="team__member-bluecheck" alt="">
-              <img src="./images/team-fotoframe.svg" class="team__member-frame" alt="">
-              <img src="./images/team-001.png" class="team__member-picture" alt="">
-            </div>
-            <p class="team__member-name">Fahim Rahman</p>
-            <p class="team__member-username">@rahman</p>
+            <p class="team__member-name">Iván Ordoñez</p>
+            <p class="team__member-username">Ingeniero Biomédico, ventas.</p>
           </div>
         </div>
       </div>
@@ -268,10 +280,9 @@
     <section class="app">
       <div class="container">
         <div class="app__content">
-          <h3 class="section__title">Get Our Aplication</h3>
-          <p class="section__subtitle">You Can Easily Find This App…!</p>
-          <p>I say chap that’s suing lavatory chip shop gosh off his smashing boot are you taking the piss posh loo
-            brilliant.</p>
+          <h3 class="section__title">Aplicación Movil!</h3>
+          <p class="section__subtitle">Encuéntrala fácilmente</p>
+          <p>Maneja y actualiza rápidamente todo tu sistema desde tu teléfono inteligente con la Aplicación de GDB.</p>
           <p class="app__buttons">
             <a href=""><img src="./images/button-appstore.png" alt=""></a>
             <a href=""><img src="./images/button-playstore.png" alt=""></a>
@@ -288,8 +299,8 @@
     <section class="news">
       <div class="container">
         <div class="news__content">
-          <h3 class="section__title">Get Our Aplication</h3>
-          <p class="section__subtitle">Latest News</p>
+          <h3 class="section__title">No te pierdas lo último</h3>
+          <p class="section__subtitle">Blog GBD</p>
         </div>
 
 
@@ -298,7 +309,7 @@
             <img src="./images/news__image-001.png" class="news__article-image" alt="">
             <div class="news__article-content">
               <h3>It Does Not Matter Hows Slowly go as Long</h3>
-              <p><a class="link__arrowed" href="#">Continue Reading
+              <p><a class="link__arrowed" href="#">Seguir leyendo
                   <svg width="10" height="8" viewBox="0 0 10 8" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M1.5625 4H8.4375" stroke="#4A4A56" stroke-width="1.2" stroke-linecap="round"
                       stroke-linejoin="round" />
@@ -312,7 +323,7 @@
             <img src="./images/news__image-002.png" class="news__article-image" alt="">
             <div class="news__article-content">
               <h3>Netbook Network Added New Photo Filter</h3>
-              <p><a class="link__arrowed" href="#">Continue Reading
+              <p><a class="link__arrowed" href="#">Seguir leyendo
                   <svg width="10" height="8" viewBox="0 0 10 8" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M1.5625 4H8.4375" stroke="#4A4A56" stroke-width="1.2" stroke-linecap="round"
                       stroke-linejoin="round" />
@@ -326,7 +337,7 @@
             <img src="./images/news__image-003.png" class="news__article-image" alt="">
             <div class="news__article-content">
               <h3>We Optimised Netbooks Better Navigation</h3>
-              <p><a class="link__arrowed" href="#">Continue Reading
+              <p><a class="link__arrowed" href="#">Seguir leyendo
                   <svg width="10" height="8" viewBox="0 0 10 8" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M1.5625 4H8.4375" stroke="#4A4A56" stroke-width="1.2" stroke-linecap="round"
                       stroke-linejoin="round" />
@@ -340,7 +351,7 @@
       </div>
     </section>
   </main>
-  <footer class="footer">
+  <footer id="section-contacto" class="footer">
     <div class="container">
       <div class="footer__main">
         <nav aria-label="Secondary" class="footer__nav">
@@ -397,21 +408,22 @@
     <div class="footer__secondary">
       <div class="container">
         <div class="footer__secondary-content">
-          <p>Besnik Creative Agency.</p>
+          <p>¡Contactanos!</p>
           <div class="footer__secondary-logo">
             <img src="./images/logo-dark.svg" alt="" />
           </div>
           <ul class="footer__social-links">
-            <li><a  title="Go to my social" href=""><img src="./images/ico-twitter.svg" alt=""></a></li>
-            <li><a  title="Go to my social" href=""><img src="./images/ico-ig.svg" alt=""></a></li>
-            <li><a  title="Go to my social" href=""><img src="./images/ico-fb.svg" alt=""></a></li>
-            <li><a  title="Go to my social" href=""><img src="./images/ico-linkedin.svg" alt=""></a></li>
+            <li><a title="Go to my social" href="https://api.whatsapp.com/send?phone=+573165842991&text=Hola! quisiera obtener más información por favor."><img src="./images/ico-wpp.svg" alt=""></a></li>
+            <li><a title="Go to my social" href="https://www.instagram.com/alejo.yela/"><img src="./images/ico-ig.svg" alt=""></a></li>
+            <li><a title="Go to my social" href="https://www.facebook.com/alejo.yela/"><img src="./images/ico-fb.svg" alt=""></a></li>
+            <li><a title="Go to my social" href="https://www.linkedin.com/in/andr%C3%A9s-alejandro-yela-bastidas-b387b2257/"><img src="./images/ico-linkedin.svg" alt=""></a></li>
 
           </ul>
         </div>
       </div>
     </div>
   </footer>
+  <script src="./script.js"></script>
 </body>
 
 </html>
