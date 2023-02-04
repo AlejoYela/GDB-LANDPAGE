@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Gestor de Documentación Biomédica</title>
+  <title>Sistema de Gestión de Documentación Biomédica GDB</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
@@ -23,7 +23,7 @@
             <li><a href="#section-inicio" class="active">Inicio</a></li>
             <li><a href="#section-caracteristicas">Caracteristicas</a></li>
             <li><a href="#section-comunidad">Comunidad</a></li>
-            <li><a href="">Blog</a></li>
+            <li><a href="#section-blog">Blog</a></li>
             <li><a href="#section-contacto">Contacto</a></li>
           </ul>
         </nav>
@@ -31,9 +31,9 @@
         <div class="header__actions">
           <form class="header__search" action="">
             <img src="./images/ico-search.svg" alt="Magnify glass icon for search" width="16" height="16" />
-            <input type="search" aria-label="search" placeholder="Search Here ... " />
+            <input type="search" aria-label="search" placeholder="Buscar ... " />
           </form>
-          <a href="/login" class="btn">Log in</a>
+          <a href="/login" class="btn">Iniciar sesión</a>
         </div>
       </div>
     </header>
@@ -44,7 +44,7 @@
         <p class="hero__description">Mantiene, genera y modifica fácilmente la documentación relacionada a equipos
           biomédicos en tu institución.</p>
         <p class="hero__cta">
-          <a href="#" class="btn btn--large">Saber más</a>
+          <a href="/blogs/sistema.html" class="btn btn--large">Saber más</a>
           <a href="mailto:?subject=Mirá esta página web&body=Mira esta página web: https://www.gdb.com.co"
             class="btn btn__secondary btn--large">Compartir</a>
 
@@ -72,7 +72,6 @@
     </section>
   </div>
   <main>
-    <div class="clients"></div>
     <section class="whats-netbooks container">
       <div class="whats-netbooks__content">
         <h3 class="section__title">¿Y que es?</h3>
@@ -290,13 +289,13 @@
         </div>
         <div class="app__screenshot">
           <img src="./images/app-screenshot-shine.svg" class="app__screenshot-shine" alt="">
-          <img src="./images/app-screenshot.png" class="app__screenshot-picture" alt="">
+          <img src="./images/app-screenshot.svg" class="app__screenshot-picture" alt="">
           <div class="app__screenshot-circle-1"></div>
           <div class="app__screenshot-circle-2"></div>
         </div>
       </div>
     </section>
-    <section class="news">
+    <section id="section-blog" class="news">
       <div class="container">
         <div class="news__content">
           <h3 class="section__title">No te pierdas lo último</h3>
@@ -308,7 +307,7 @@
           <article class="news_article">
             <img src="./images/news__image-001.png" class="news__article-image" alt="">
             <div class="news__article-content">
-              <h3>It Does Not Matter Hows Slowly go as Long</h3>
+              <h3>¿Cómo Excel simplifica tareas con bases de datos?</h3>
               <p><a class="link__arrowed" href="#">Seguir leyendo
                   <svg width="10" height="8" viewBox="0 0 10 8" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M1.5625 4H8.4375" stroke="#4A4A56" stroke-width="1.2" stroke-linecap="round"
@@ -322,7 +321,7 @@
           <article class="news_article">
             <img src="./images/news__image-002.png" class="news__article-image" alt="">
             <div class="news__article-content">
-              <h3>Netbook Network Added New Photo Filter</h3>
+              <h3>Manual de uso del sitema básico inicial</h3>
               <p><a class="link__arrowed" href="#">Seguir leyendo
                   <svg width="10" height="8" viewBox="0 0 10 8" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M1.5625 4H8.4375" stroke="#4A4A56" stroke-width="1.2" stroke-linecap="round"
@@ -336,7 +335,7 @@
           <article class="news_article">
             <img src="./images/news__image-003.png" class="news__article-image" alt="">
             <div class="news__article-content">
-              <h3>We Optimised Netbooks Better Navigation</h3>
+              <h3>Automatización: horas ahorradas y trabajo óptimo.</h3>
               <p><a class="link__arrowed" href="#">Seguir leyendo
                   <svg width="10" height="8" viewBox="0 0 10 8" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M1.5625 4H8.4375" stroke="#4A4A56" stroke-width="1.2" stroke-linecap="round"
@@ -413,10 +412,18 @@
             <img src="./images/logo-dark.svg" alt="" />
           </div>
           <ul class="footer__social-links">
-            <li><a title="Go to my social" href="https://api.whatsapp.com/send?phone=+573165842991&text=Hola! quisiera obtener más información por favor."><img src="./images/ico-wpp.svg" alt=""></a></li>
-            <li><a title="Go to my social" href="https://www.instagram.com/alejo.yela/"><img src="./images/ico-ig.svg" alt=""></a></li>
-            <li><a title="Go to my social" href="https://www.facebook.com/alejo.yela/"><img src="./images/ico-fb.svg" alt=""></a></li>
-            <li><a title="Go to my social" href="https://www.linkedin.com/in/andr%C3%A9s-alejandro-yela-bastidas-b387b2257/"><img src="./images/ico-linkedin.svg" alt=""></a></li>
+            <li><a title="Contácto vía Whatsapp"
+                href="https://api.whatsapp.com/send?phone=+573165842991&text=Hola! quisiera obtener más información por favor."><img
+                  src="./images/ico-wpp.svg" alt=""></a></li>
+            <li><a title="Contácto vía Instagram" href="https://www.instagram.com/alejo.yela/"><img src="./images/ico-ig.svg"
+                  alt=""></a></li>
+            <li><a title="Contácto vía Facebook" href="https://www.facebook.com/alejo.yela/"><img src="./images/ico-fb.svg"
+                  alt=""></a></li>
+            <li><a title="Contácto vía Linkedin"
+                href="https://www.linkedin.com/in/andr%C3%A9s-alejandro-yela-bastidas-b387b2257/"><img
+                  src="./images/ico-linkedin.svg" alt=""></a></li>
+            <li><a title="Contácto vía Correo Electrónico" href="mailto:andres.alejo.yela@gmail.com?subject=Consulta%20sobre%20sistema&body=Hola,%20estoy%20interesado%20en%20más%20información%20sobre%20tus%20productos."><img src="./images/ico-github-2.svg"
+                  alt=""></a></li>
 
           </ul>
         </div>
