@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manual de Usuario GDB.</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/styles/main.css">
+</head>
+
+<body class="body-sistema">
+    <header class="header prime">
+        <div class="container header__container">
+            <a href="/index.html"><img src="/images/logo.svg" alt="" width="145" height="35" /></a>
+            <nav aria-label="Primary" class="header__nav">
+                <ul>
+                    <li><a href="#section-inicio-sistema" class="active">Inicio</a></li>
+                    <li><a href="#section-contacto-sistema">Contacto</a></li>
+                </ul>
+            </nav>
+
+            <div class="header__actions">
+                <form class="header__search" action="">
+                    <img src="/images/ico-search.svg" alt="Magnify glass icon for search" width="16" height="16" />
+                    <input type="search" aria-label="search" placeholder="Buscar ... " />
+                </form>
+                <a href="/login" class="btn">Iniciar sesión</a>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section>
+            <div id="bg-manual" class="header-bg">
+                <div class="container">
+                    <div class="header-text">
+                        <h1 class="hero__title">Gestión de Documentación Biomédica.</h1>
+                        <h2 class="blog__subtitle">Manual de Usuario del Sistema.
+                        </h2>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="blog-style">
+                    <div class="text-column">
+                        <p id="nota-p"><b>Este manual es una versión simplificada del manual de usuario completo para un
+                                sistema de
+                                gestión de documentación de equipos biomédicos creado en macros Excel VBA. Se ha
+                                diseñado
+                                para proporcionar una comprensión básica del sistema a los usuarios y para responder a
+                                las
+                                preguntas más frecuentes. El manual completo, que incluye información técnica detallada,
+                                se
+                                entregará al usuario al realizar la entrega post-compra.</b></p>
+                        <h3>Introducción</h3>
+                        <p>Bienvenido al manual de usuario simplificado de nuestro sistema de gestión de documentación
+                            de equipos biomédicos. Este manual está diseñado para proporcionar una visión general del
+                            sistema y para responder a las preguntas más frecuentes que puedan tener los usuarios. En la
+                            sección de introducción, se describirán brevemente el propósito y las características del
+                            sistema. En las secciones siguientes, se incluirá información sobre los requisitos del
+                            sistema, la instalación, el uso básico, la personalización, la resolución de problemas y
+                            anexos adicionales. Esperamos que este manual le brinde la información necesaria para
+                            obtener el máximo provecho de nuestro sistema de gestión de documentación de equipos
+                            biomédicos.</p>
+                        <img src="/blogs/imgs/8.png" alt="">
+                        <p>Las características del sistema de gestión de documentación de equipos biomédicos incluyen:
+                        </p>
+                        <ul>
+                            <li>Instalación fácil y poco requisito de almacenamiento: Este sistema está desarrollado en
+                                Microsoft Excel, por lo que el usuario solo necesita tener Microsoft Office Excel
+                                instalado
+                                en su computadora y habilitar las macros en el archivo para utilizarlo.</li>
+                            <li>Diseño intuitivo y fácil de usar: El sistema está diseñado para ser sencillo e
+                                intuitivo,
+                                con una curva de aprendizaje rápida para cualquier profesional de la biomédica.</li>
+                            <li>Personalización completa: El sistema es altamente personalizable, permitiendo cambiar
+                                logos,
+                                áreas de la institución, fotos de los equipos, cantidad de equipos, agregar o quitar
+                                características adicionales, cambiar colores y estilos, entre otros aspectos.</li>
+                            <li>Escalabilidad: El sistema es escalable, lo que significa que puede agregar tantos
+                                equipos y
+                                áreas como sea necesario, dependiendo del tamaño y nivel de su hospital.</li>
+                            <li>Soporte y mantenimiento constante: Ofrecemos un soporte y mantenimiento personalizado y
+                                constante para asegurarnos de que el sistema funcione correctamente y cumpla con sus
+                                necesidades.</li>
+                            <li>Inventario de equipos: Ofrecemos la posibilidad de que nuestro equipo realice un proceso
+                                de
+                                inventario de equipos en su institución y los ingrese en el sistema, dejándolo listo
+                                para
+                                funcionar desde el primer momento.</li>
+                            <li>Uso libre: Una de las características importantes del sistema GDB es que su código es de
+                                acceso
+                                libre, lo que significa que si el usuario posee los conocimientos técnicos necesarios,
+                                puede modificar el sistema de acuerdo a sus necesidades y preferencias.</li>
+                        </ul>
+                        <h3>Requisitos del sistema</h3>
+                        <p>El sistema de gestión de documentación de equipos biomédicos es una herramienta fundamental
+                            para el correcto funcionamiento de cualquier institución en este ámbito. Para que este
+                            sistema funcione de manera óptima, es necesario cumplir con una serie de requisitos tanto de
+                            hardware como de software. En esta sección se describen detalladamente los requisitos
+                            necesarios para ejecutar el sistema, incluyendo los requisitos mínimos de hardware y
+                            software, así como las especificaciones recomendadas para una experiencia de usuario
+                            satisfactoria. Conocer estos requisitos es crucial para asegurarse de que el sistema
+                            funcione correctamente y para evitar cualquier problema técnico en su funcionamiento.</p>
+                        <img src="/blogs/imgs/9.png" alt="">
+                        <p>Un aspecto importante a considerar al utilizar el sistema de gestión de documentación de
+                            equipos biomédicos es que sus requisitos mínimos de hardware y software son muy bajos. De
+                            hecho, solo se requiere tener Microsoft Office Excel instalado en el ordenador y habilitar
+                            las macros en el archivo correspondiente. Esto significa que la mayoría de los equipos de
+                            los hospitales probablemente cumplirán con los requisitos mínimos, lo que resulta en una
+                            implementación más sencilla y asequible en términos de costos. Sin duda, esto es un aspecto
+                            muy positivo a considerar al contratar el sistema.</p>
+                        <p>Para utilizar GDB se necesitan los siguientes requisitos mínimos de sistema:</p>
+                        <ul>
+                            <li>Sistema operativo: Microsoft Windows 7 o posterior o Mac OS X 10.10 o posterior</li>
+                            <li>Procesador: Procesador de 1 GHz o más rápido</li>
+                            <li>Memoria RAM: 1 GB para 32 bits o 2 GB para 64 bits</li>
+                            <li>Espacio de almacenamiento: 3 GB de espacio disponible en el disco duro</li>
+                            <li>Versión de Microsoft Office: Microsoft Office 2016 o posterior</li>
+                            <li>Configuración de seguridad: Las macros deben estar habilitadas en la configuración de
+                                seguridad de Excel.</li>
+                        </ul>
+                        <h3>Instalación</h3>
+                        <p>La instalación del sistema de gestión de documentación de equipos biomédicos es un proceso
+                            sencillo y rápido que se puede realizar de manera eficiente con solo seguir los pasos
+                            detallados en la guía de instalación. La guía le brindará todas las informaciones y los
+                            recursos necesarios para configurar el sistema de manera adecuada en su computadora. Es
+                            importante destacar que los requisitos del sistema son mínimos, lo que significa que la
+                            mayoría de las computadoras modernas deberían ser capaces de ejecutarlo sin problemas. Con
+                            esta guía en la mano, podrá tener el sistema instalado y funcionando en un período corto de
+                            tiempo.</p>
+                        <img src="/blogs/imgs/10.png" alt="">
+                        <p>El proceso de instalación de Microsoft Excel y activación de macros depende de si se tiene
+                            una versión de Office instalada en el equipo o si se va a descargar e instalar una versión
+                            de prueba o de pago.</p>
+                        <p>Si ya se tiene una versión de Office instalada:</p>
+                        <ol>
+                            <li>Abra Microsoft Excel.</li>
+                            <li>Haga clic en "Archivo" y luego en "Opciones".</li>
+                            <li>Seleccione "Centro de seguridad".</li>
+                            <li>Seleccione "Configuración de macro".</li>
+                            <li>Seleccione "Habilitar todas las macros".</li>
+                        </ol>
+                        <p>Si se va a descargar e instalar una versión de prueba o de pago:</p>
+                        <ol>
+                            <li>Descargue e instale Microsoft Office.</li>
+                            <li>Siga los mismos pasos mencionados anteriormente para habilitar las macros en Excel.</li>
+                        </ol>
+                        <p>Una vez que se haya activado el uso de macros, se podrán utilizar en los documentos de Excel.
+                            Sin embargo, es importante tener en cuenta que algunas macros pueden ser potencialmente
+                            peligrosas y es recomendable verificar su origen y confiabilidad antes de ejecutarlas.</p>
+                        <h3>Uso básico</h3>
+                        <p>El uso básico del sistema de gestión de documentación de equipos biomédicos es esencial para
+                            su funcionamiento efectivo. Este apartado proporciona una descripción general de cómo
+                            utilizar el sistema, incluyendo cómo ingresar datos, buscar documentos y exportar
+                            información. Con una comprensión clara de cómo funciona el sistema, los usuarios podrán
+                            aprovechar al máximo sus funciones y beneficubrir nuevas formas de mejorar la eficiencia de
+                            la gestión de documentos.</p>
+                        <p>Para utilizar de manera básica el sistema GBD, siga los siguientes pasos:</p>
+
+                        <ol>
+                            <li>Abra el gestor: Para acceder a la plataforma, haga clic en el botón "Abrir gestor".</li>
+                            <li>Seleccione la opción de hoja de vida o reporte de mantenimiento: Una vez abierto el
+                                gestor,
+                                decida si desea generar una hoja de vida o un reporte de mantenimiento.</li>
+                            <li>Seleccione los equipos o áreas: Elija los equipos o áreas de la institución que desea
+                                incluir en su hoja de vida o reporte de mantenimiento.</li>
+                            <li>Seleccione la carpeta de fotografías: Si está generando una hoja de vida, deberá
+                                seleccionar
+                                la carpeta donde se encuentran las fotografías de los equipos.</li>
+                            <li>Presione el botón "Guardar": Finalmente, haga clic en el botón "Guardar" para generar su
+                                hoja de vida o reporte de mantenimiento.</li>
+                            <li>Si tiene algún problema o incoveniente durante el uso del sistema GBD, no dude en llamar
+                                a
+                                soporte técnico para obtener ayuda.</li>
+                        </ol>
+
+                        <h3>Personalización</h3>
+                        <p>El sistema de gestión de documentación de equipos biomédicos está diseñado para satisfacer
+                            las necesidades únicas de cada hospital y garantizar una experiencia de usuario optima. Para
+                            lograr esto, ofrecemos una amplia variedad de opciones de personalización para que pueda
+                            adaptarse a sus requisitos específicos. Si desea personalizar su sistema, simplemente
+                            indíqueselo a nuestro equipo y lo haremos a su gusto. Juntos, trabajaremos para asegurarnos
+                            de que el sistema cumpla con sus expectativas y le brinde una solución eficiente y efectiva.
+                        </p>
+                        <img src="/blogs/imgs/11.png" alt="">
+                        <p>A continuación, se presenta una lista de elementos que se pueden personalizar en el sistema.
+                        </p>
+                        <ul>
+                            <li>Logos</li>
+                            <li>Áreas de la institución</li>
+                            <li>Fotos de los equipos</li>
+                            <li>Cantidad de equipos</li>
+                            <li>Agregar o quitar características extra</li>
+                            <li>Cambiar colores</li>
+                            <li>Estilos</li>
+                        </ul>
+                        <p>La personalización del sistema de gestión de documentación de equipos biomédicos permite a la
+                            institución tener un sistema que se adapte a sus necesidades y preferencias. Por favor, no
+                            dude en contactar a nuestro equipo de soporte si desea realizar alguna personalización en su
+                            sistema. Estaremos encantados de ayudarle a lograr su visión.</p>
+                        <h3>Ejemplos de reportes generados por GDB</h3>
+                        <p>En esta sección, se mostrarán imágenes de los reportes generados por el sistema GDB. Aquí,
+                            los usuarios podrán visualizar cómo se ven los informes de mantenimiento y hojas de vida de
+                            los equipos, generados a través del uso efectivo de GDB. La finalidad de esta sección es
+                            ofrecer una idea clara y concisa de lo que se puede esperar de los informes generados por el
+                            sistema, y cómo estos pueden ayudar en la toma de decisiones y en el control de la calidad y
+                            el estado de los equipos.</p>
+                        <div class="image-grid">
+                            <div class="image-grid-item">
+                                <img src="/blogs/imgs/13.png" alt="Imagen 1">
+                            </div>
+                            <div class="image-grid-item">
+                                <img src="/blogs/imgs/14.png" alt="Imagen 2">
+                            </div>
+                        </div>
+                        <p>La sección de imágenes resultantes muestra las visualizaciones finales obtenidas al utilizar
+                            el sistema GDB. Al hacer clic en cualquiera de las imágenes, se abre una versión ampliada
+                            para una mejor apreciación. Este apartado es una forma clara y accesible de revisar los
+                            informes generados y verificar la exactitud de los mismos. Al utilizar GDB, se puede estar
+                            seguro de tener un registro detallado y actualizado de los equipos y áreas en la
+                            institución.</p>
+                        <h3>Troubleshooting</h3>
+                        <p>En esta sección, le brindaremos información sobre cómo solucionar los problemas más comunes
+                            que pueden surgir al utilizar el sistema de gestión de documentación de equipos biomédicos.
+                            Hemos recopilado una lista de soluciones efectivas a los problemas más comunes para que
+                            pueda resolverlos de manera rápida y eficiente. Si aún no encuentra una solución a su
+                            problema, también le proporcionaremos información sobre cómo obtener asistencia adicional.
+                            La sección de Troubleshooting es una herramienta valiosa para mantener su sistema
+                            funcionando sin problemas y asegurarse de que sus documentos de equipos biomédicos estén
+                            siempre accesibles y actualizados.</p>
+                        <img src="/blogs/imgs/12.png" alt="">
+                        <p>Tabla de solución a problemas comunes en el sistema de gestión de documentación de equipos
+                            biomédicos:</p>
+                        <table>
+                            <tr>
+                                <th>Problema</th>
+                                <th>Solución</th>
+                            </tr>
+                            <tr>
+                                <td>No funciona el botón de abrir gestor</td>
+                                <td>Habilite las macros en la seguridad de Excel</td>
+                            </tr>
+                            <tr>
+                                <td>Error de visual basic</td>
+                                <td>Cierre y abra el sistema, si persiste llame a soporte técnico</td>
+                            </tr>
+                            <tr>
+                                <td>No asigna códigos de inventario, calibración o mantenimiento o los asigna mal</td>
+                                <td>Revise la columna de códigos en cada inventario y asegúrese de que el último
+                                    registro coincida con el contador, si persiste llame a soporte técnico</td>
+                            </tr>
+                            <tr>
+                                <td>No abren los pdfs</td>
+                                <td>Asegúrese de tener un lector de pdf instalado en su computadora</td>
+                            </tr>
+                            <tr>
+                                <td>La fotografía del equipo no aparece en la hoja de vida o da error al cargarla</td>
+                                <td>Asegúrese de estar utilizando un formato de imágen que excel VBA soporte</td>
+                            </tr>
+                            <tr>
+                                <td>Problemas al guardar el archivo:</td>
+                                <td>Verifique que el archivo no esté en uso por otro programa o usuario. También
+                                    asegúrese
+                                    de tener permisos de escritura en la ubicación donde está tratando de guardar el
+                                    archivo. Si el
+                                    problema persiste, llame a soporte técnico.</td>
+                            </tr>
+                            <tr>
+                                <td>Problemas con la ejecución de macros:</td>
+                                <td>Asegúrese de que las macros estén habilitadas en la seguridad de macro. También
+                                    intente reparar y optimizar el libro de Excel. Si el problema persiste, llame a
+                                    soporte técnico.</td>
+                            </tr>
+                            <tr>
+                                <td>Errores de Visual Basic:</td>
+                                <td>Cierre y abra el sistema. También intente reparar y optimizar el libro de Excel. Si
+                                    el
+                                    problema persiste, llame a soporte técnico.</td>
+                            </tr>
+                            <tr>
+                                <td>Problemas con la asignación de fórmulas o funciones:</td>
+                                <td>Verifique la sintaxis de la fórmula o función y asegúrese de que todas las
+                                    referencias
+                                    estén correctas. Si el problema persiste, llame a soporte técnico.</td>
+                            </tr>
+                            <tr>
+                                <td>Problemas con la visualización de datos:</td>
+                                <td>Verifique que las celdas estén correctamente formateadas y que no haya conflictos en
+                                    la fórmula. También asegúrese de que los datos estén correctamente organizados en el
+                                    archivo. Si
+                                    el problema persiste, llame a soporte técnico.</td>
+                            </tr>
+                            <tr>
+                                <td>Problemas con la impresión:</td>
+                                <td>Verifique que la impresora esté conectada y en línea. También verifique que el
+                                    archivo
+                                    esté correctamente formateado para la impresión. Si el problema persiste, llame a
+                                    soporte
+                                    técnico.</td>
+                            </tr>
+                        </table>
+                        <p id="nota-p">Recuerda que si los problemas persisten, siempre puedes llamar a soporte técnico
+                            para obtener
+                            ayuda adicional.</p>
+
+                        <h3>Anexos</h3>
+                        <p>Este video muestra el funcionamiento del sistema GDB (Gestor de Documentación de Equipos
+                            biomédicos). En él se puede ver cómo ingresar equipos y documentación relacionada, cómo
+                            realizar búsquedas y exportar información, así como cómo personalizar el sistema para
+                            adaptarlo a las necesidades de cada institución. También se puede apreciar la interfaz
+                            intuitiva y fácil de usar del sistema, lo que lo hace ideal para cualquier equipo de
+                            mantenimiento biomédico:</p>
+                        <video width="100%" controls>
+                            <source
+                                src="/videos/GESTOR DE DOCUMENTACIÓN IPS INDÍGENA CUASPUD CARLOSAMA.xlsm - Excel 2023-02-06 20-22-30.mp4"
+                                type="video/mp4">
+                            Tu navegador no soporta la etiqueta de video.
+                        </video>
+                    </div>
+                    <div class="other-column">
+                        <div title="Notas de trayectoria aprendidas durante el ejercicio de la Ing. Biomédica"
+                            class="oc-title">
+                            <h3>NOTAS DEL INGENIERO BIOMÉDICO.</h3>
+                        </div>
+                        <section class="oc-1">
+                            <h3>La importancia de la documentación en el mantenimiento de equipos biomédicos</h3>
+                            <p>La documentación es una parte fundamental del trabajo de un ingeniero biomédico. Al
+                                llevar un registro detallado de la historia de los equipos, se puede asegurar una
+                                correcta planificación y ejecución del mantenimiento, así como una fácil localización de
+                                problemas y soluciones en el futuro. Además, una buena documentación puede ser útil para
+                                el seguimiento y la mejora continua de los procesos de mantenimiento.</p>
+                        </section>
+                        <section class="oc-1">
+                            <h3>El valor de la colaboración en equipos multidisciplinarios</h3>
+                            <p>Trabajar en equipos multidisciplinarios puede ser una experiencia enriquecedora para un
+                                ingeniero biomédico. Al compartir conocimientos y habilidades con profesionales de otras
+                                áreas, se pueden abordar problemas de manera más efectiva y encontrar soluciones más
+                                innovadoras. Además, la colaboración puede fomentar el aprendizaje mutuo y la mejora
+                                continua en la práctica profesional.</p>
+                        </section>
+                        <section class="oc-1">
+                            <h3>La importancia de la formación continua en el desempeño de un ingeniero biomédico</h3>
+                            <p>La tecnología en el campo de la biomedicina está en constante evolución, por lo que es
+                                importante que los ingenieros biomédicos mantengan sus conocimientos y habilidades
+                                actualizados. La formación continua puede ayudar a mejorar el desempeño profesional y a
+                                mantenerse al día con las últimas innovaciones y tendencias en la industria.</p>
+                        </section>
+                        <section class="oc-1">
+                            <h3>La importancia de la comunicación efectiva en la relación con los pacientes y sus
+                                familiares</h3>
+                            <p>Además de las habilidades técnicas, un ingeniero biomédico también debe tener habilidades
+                                de comunicación efectivas para trabajar con pacientes y sus familiares. La comunicación
+                                clara y empática puede ayudar a tranquilizar a los pacientes y a mejorar la confianza en
+                                el trato médico. Además, una buena comunicación puede facilitar la toma de decisiones
+                                informadas y una mejor resolución de problemas.</p>
+                        </section>
+                        <section class="oc-1">
+                            <h3>Técnicas de solución de problemas para equipos médicos</h3>
+                            <p>En el ejercicio profesional de un ingeniero biomédico, es importante tener en cuenta
+                                diferentes
+                                técnicas de solución de problemas para garantizar un diagnóstico preciso y una solución
+                                efectiva. Algunos de los métodos más efectivos incluyen el uso de diagramas de flujo, la
+                                eliminación de los elementos y la investigación exhaustiva de los manuales de servicio.
+                            </p>
+                        </section>
+                        <section class="oc-1">
+                            <h3>La importancia de la documentación en el mantenimiento de equipos médicos</h3>
+                            <p>La documentación adecuada es fundamental en el mantenimiento de los equipos médicos. Al
+                                documentar cada paso del mantenimiento y las soluciones a los problemas técnicos, se
+                                crea un
+                                registro completo y actualizado que puede ser consultado en el futuro. Además, la
+                                documentación
+                                también ayuda a garantizar una mejor gestión de los equipos y una mayor eficiencia en el
+                                mantenimiento.</p>
+                        </section>
+                        <section class="oc-1">
+                            <h3>La importancia de la formación continua en el campo biomédico</h3>
+                            <p>La formación continua es clave en el campo biomédico, ya que las tecnologías y los
+                                equipos
+                                médicos están en constante evolución. Mantenerse actualizado con las últimas técnicas y
+                                tecnologías es fundamental para brindar un servicio de alta calidad y garantizar la
+                                seguridad de
+                                los pacientes y los equipos médicos.</p>
+                        </section>
+                        <section class="oc-1">
+                            <h3>El papel del ingeniero biomédico en la gestión de riesgos clínicos</h3>
+                            <p>El ingeniero biomédico desempeña un papel importante en la gestión de los riesgos
+                                clínicos al
+                                asegurarse de que los equipos médicos funcionen correctamente y cumplan con los
+                                estándares de
+                                seguridad apropiados. La detección temprana de posibles problemas técnicos y la solución
+                                rápida
+                                de los mismos pueden ayudar a prevenir posibles incidentes y a garantizar la seguridad
+                                de los
+                                pacientes y del personal médico.</p>
+                        </section>
+
+                        <section>
+                            <h3>Protección de Datos Médicos</h3>
+                            <p>En el ámbito de la medicina, la privacidad y la seguridad de los datos médicos son
+                                aspectos
+                                críticos. Como ingeniero biomédico, es importante estar informado sobre las normativas y
+                                regulaciones que rigen la protección de la información médica. Algunos puntos a tener en
+                                cuenta
+                                incluyen:</p>
+                            <ul>
+                                <li>Conocer y cumplir con la normativa de protección de datos médicos, como el
+                                    Reglamento
+                                    General de
+                                    Protección de Datos (RGPD) en la Unión Europea.</li>
+                                <li>Garantizar la privacidad de los pacientes al momento de manejar sus datos médicos.
+                                    Esto
+                                    incluye
+                                    limitar el acceso a la información y asegurarse de que los datos estén encriptados y
+                                    almacenados
+                                    de manera segura.</li>
+                                <li>Asegurarse de que los equipos utilizados para el registro y almacenamiento de datos
+                                    médicos
+                                    cumplan con los estándares de seguridad necesarios.</li>
+                                <li>Capacitar a los trabajadores en la importancia de proteger la privacidad y seguridad
+                                    de
+                                    los
+                                    datos médicos y en cómo aplicar las medidas necesarias para garantizar esta
+                                    protección.</li>
+                            </ul>
+
+                        </section>
+                        <section>
+                            <h3>Importancia del conocimiento regulatorio en Colombia para el ingeniero biomédico</h3>
+                            <p>El ingeniero biomédico en Colombia desempeña un papel fundamental en la seguridad y el
+                                funcionamiento de los equipos médicos. Además de tener una sólida formación en
+                                ingeniería y
+                                tecnología médica, es importante que estén al tanto de las regulaciones y normativas en
+                                vigor en el país. Esto garantiza que los equipos médicos cumplan con los estándares de
+                                seguridad y eficacia exigidos por las autoridades sanitarias colombianas.</p>
+
+                            <p>El conocimiento de las normativas y regulaciones también permite al ingeniero biomédico
+                                tomar decisiones informadas sobre la compra, mantenimiento y uso de los equipos médicos,
+                                asegurando que sean seguros y cumplan con las regulaciones aplicables. Además, el
+                                cumplimiento de estas regulaciones es esencial para garantizar la calidad de la atención
+                                médica y proteger la salud y seguridad de los pacientes y del personal médico.</p>
+
+                        </section>
+
+
+                    </div>
+
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+
+
+</html>
