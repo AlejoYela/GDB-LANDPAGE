@@ -998,9 +998,30 @@ th {
 
 @media (max-width: 48rem) {
 
-  .html {
+  html {
     max-width: 100%;
     overflow-x: auto;
+  }
+
+  h3 {
+    text-align: center;
+    /* Centra el texto del h3 */
+    margin: 0 auto;
+    /* Establece un margen superior e inferior de 0 y un margen izquierdo y derecho automático para centrar el h3 */
+  }
+
+  li {
+    text-align: center;
+    /* Centra el texto horizontalmente */
+    line-height: 2;
+    /* Centra el texto verticalmente */
+  }
+
+  p {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
   }
 
   .header__actions {
@@ -1024,11 +1045,19 @@ th {
   }
 
   .whats-netbooks__images {
-    grid-template-columns: 1fr;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
   }
 
   .achievement {
     grid-template-columns: 1fr;
+  }
+
+  .achievement__content {
+    max-width: 100%;
+    margin: auto;
   }
 
   .team__members {
@@ -1054,6 +1083,10 @@ th {
   .hero__content {
     display: grid;
     grid-template-columns: 1fr;
+    text-align: center;
+    width: 28rem;
+    margin: 0 auto;
+    margin-bottom: 4rem;
   }
 
   :root {
@@ -1071,10 +1104,9 @@ th {
     padding: 0;
     display: flex;
     flex-direction: column;
-    /* Cambia a una sola columna */
     justify-content: center;
-    /* Centra los elementos */
-    gap: 2rem;
+    gap: 0.5rem;
+
   }
 
   .community__content {
@@ -1098,4 +1130,65 @@ th {
     /* Centra los elementos */
     gap: 1rem;
   }
+
+  .team__tabs {
+    width: 100%;
+    display: grid;
+  }
+
+  .team__content {
+    width: 100%;
+  }
+
+  .app .container {
+    display: grid;
+    grid-template-columns: 1fr;
+    height: 32.5rem;
+    align-items: center;
+  }
+
+  .hero__cta {
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+  }
+
+  .hero__title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .section__title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .section__subtitle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .app__screenshot {
+    justify-self: center;
+  }
+
+  .app_content {
+    gap: 1rem;
+    margin-top: 1rem;
+  }
+
+  .footer__secondary-content {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
 }
