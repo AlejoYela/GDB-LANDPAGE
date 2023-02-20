@@ -799,11 +799,11 @@ a.link__arrowed:hover svg path {
 }
 
 #bg-sistema {
-  background-image: url(/blog\ images/img-header-blog.png);
+  background-image: url(/blog\ images/img-header-blog);
 }
 
 #bg-manual {
-  background-image: url(/blog\ images/img-header-manual.png);
+  background-image: url(/blog\ images/img-header-manual);
 }
 
 .header-text {
