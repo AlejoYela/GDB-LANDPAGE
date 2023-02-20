@@ -195,7 +195,7 @@ p.section__subtitle {
   border: solid 0.0625rem var(--color-white);
   width: 1.5rem;
   aspect-ratio: 1/1;
-  box-shadow: -0.3125rem 0.25rem 0.875rem rgba(151, 151, 151, 0.28) background-color: transparent;
+  box-shadow: -0.3125rem 0.25rem 0.875rem rgba(151, 151, 151, 0.28);
 }
 
 a.link__arrowed {
@@ -214,7 +214,6 @@ a.link__arrowed:hover svg path {
 
 .prime {
   background: linear-gradient(311.76deg, #D4E7FE -15.24%, #FFFFFF 78.85%);
-
 }
 
 .header {
@@ -260,7 +259,7 @@ a.link__arrowed:hover svg path {
 }
 
 .slideshow-container {
-  max-width: 62.5rem;
+  max-width: 100%;
   position: relative;
   margin: auto;
 }
@@ -317,6 +316,7 @@ a.link__arrowed:hover svg path {
   font-size: 3.5rem;
   line-height: 1.1;
   margin: 1.5rem 0;
+
 }
 
 .hero__description {
@@ -789,7 +789,7 @@ a.link__arrowed:hover svg path {
 
 
 .header-bg {
-   background-size: cover;
+  background-size: cover;
   background-position: center;
   height: 18.75rem;
   display: flex;
@@ -957,12 +957,15 @@ table {
   margin-bottom: 1.25rem;
   color: #C5C8D4;
 }
-th, td {
+
+th,
+td {
   border: 0.0625rem solid gray;
   padding: 0.5rem;
 }
+
 th {
-  background-color:#C5C8D4;
+  background-color: #C5C8D4;
   color: black;
 }
 
@@ -990,4 +993,109 @@ th {
 
 .image-grid-item:hover img {
   transform: scale(1.1);
+}
+
+
+@media (max-width: 48rem) {
+
+  .html {
+    max-width: 100%;
+    overflow-x: auto;
+  }
+
+  .header__actions {
+    display: none;
+  }
+
+  .header__search {
+    display: none;
+  }
+
+  .community__items {
+    grid-template-columns: 1fr;
+  }
+
+  .header__container {
+    display: flex;
+    flex-direction: column;
+    /* Cambia a una sola columna */
+    justify-content: center;
+    /* Centra los elementos */
+  }
+
+  .whats-netbooks__images {
+    grid-template-columns: 1fr;
+  }
+
+  .achievement {
+    grid-template-columns: 1fr;
+  }
+
+  .team__members {
+    grid-template-columns: 1fr;
+  }
+
+  .app {
+    grid-template-columns: 1fr;
+  }
+
+  .container {
+    grid-template-columns: 1fr;
+  }
+
+  .news__articles {
+    grid-template-columns: 1fr;
+  }
+
+  .footer__main {
+    grid-template-columns: 1fr;
+  }
+
+  .hero__content {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  :root {
+
+    --full-width: 100%;
+
+  }
+
+  .header__nav {
+    align-items: center;
+  }
+
+  .header__nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    /* Cambia a una sola columna */
+    justify-content: center;
+    /* Centra los elementos */
+    gap: 2rem;
+  }
+
+  .community__content {
+    text-align: center;
+    width: 100%;
+    margin: 0 auto;
+    margin-bottom: 4rem;
+  }
+
+  .whats-netbooks {
+    flex-direction: column;
+    /* Cambia a una sola columna */
+    justify-content: center;
+    /* Centra los elementos */
+  }
+
+  .hero {
+    flex-direction: column;
+    /* Cambia a una sola columna */
+    justify-content: center;
+    /* Centra los elementos */
+    gap: 1rem;
+  }
 }
