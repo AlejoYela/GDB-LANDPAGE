@@ -996,7 +996,7 @@ th {
 }
 
 
-@media (max-width: 48rem) {
+@media (max-width: 768px) {
 
   html {
     max-width: 100%;
@@ -1206,6 +1206,5 @@ th {
     body {
       margin: 10px;
     }
-
-
 }
+
